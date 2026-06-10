@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PokeApi💃🏻</title>
+</head>
+<body class="bg-gradient-to-br from-slate-800 via-purple-900 to-indigp-900
+            min-h-screen flex items-center justify-center p-5">
+
+    <!--* La contenedora de la botonera y la card -->
+    <div class="w-full max-w-4xl mx-auto">
+        <!--* La botonera-->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 shadow-2xl border border-white/20 mb-6">
+            <h1 class="text-3xl font-extrabold text-white tracking-tight drop-shadow-lg flex items-center gap-2">
+                    🧬 PokéCard <span class="text-yellow-300">Explorer</span>
+            </h1>
+
+            <div class="flex flex-wrap gap-3 items-center justify-center">
+                    <button id="randomBtn" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold py-2 px-5 rounded-full shadow-lg transition-all transform active:scale-95 flex items-center gap-2">
+                        🎲 Pokémon Random
+                    </button>
+                    <div class="flex gap-2 bg-white/20 rounded-full p-1 pl-3 backdrop-blur-sm">
+                        <input id="pokemonIdInput" type="number" placeholder="ID (1-1025)" min="1" max="1025" class="w-28 sm:w-32 bg-transparent text-white placeholder-white/70 focus:outline-none text-center font-medium">
+                        
+                        <button id="searchBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-1.5 px-4 rounded-full shadow-md transition-all">
+                            🔍 Buscar
+                        </button>
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+        
+        <!--* La card -->
+        <div
+            id="pokemonCard"
+            class="bg-white/95 backdrop-blur-sm rounded-3xl p-5 shadow-2xl border border-white/20 mb-6 overflow-hidden"
+        >
+
+        </div>
+
+        <footer class="text-center text-white/40 text-xs mt-6">
+            Pokémon API • Solo Tailwind • Datos oficiales
+        </footer>
+
+    </div>
+    
+</body>
+</html>
